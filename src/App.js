@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './App.css'
+import AddUsers from './compenents/AddUsers';
+import AllUsers from './compenents/AllUsers';
+import Dashboard from './compenents/Dashbord';
+import NavBar from './compenents/NavBar';
+import EditUser from './compenents/EditUser';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/all" element={<AllUsers />} />
+        <Route path="/add" element={<AddUsers />} />
+        <Route path="/edit/:id" element={<EditUser />} />
+        <Route path="*" element={<h1>404 Not Found</h1>} />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 

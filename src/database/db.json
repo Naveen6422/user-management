@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "name": "boyrockstar200@gmail.com",
+      "email": "boyrockstar200@gmail.com",
+      "username": "qqqq",
+      "phone": "qqq",
+      "id": 1
+    },
+    {
+      "name": "qq",
+      "email": "qq",
+      "username": "qqq",
+      "phone": "qqq",
+      "id": 2
+    },
+    {
+      "name": "Parveen Jaiswal",
+      "email": "root@root",
+      "username": "boyrockstar200@gmail.com",
+      "phone": "8287526422",
+      "id": 3
+    },
+    {
+      "name": "Parveen Jaiswal",
+      "email": "root@root",
+      "username": "Ceo",
+      "phone": "6543456",
+      "id": 4
+    }
+  ]
+}
